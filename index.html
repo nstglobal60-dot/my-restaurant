@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Ordering System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<link rel="stylesheet" href="./restaurant-ordering.css">
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <h1 class="brand">My Restaurant</h1>
+      <nav class="nav">
+        <button id="toggleCart" class="btn">🛒 View Order</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="menu" class="menu-grid">
+      <!-- Menu items injected here by JS -->
+    </section>
+  </main>
+
+  <aside id="cartSidebar" class="cart-sidebar">
+    <h2>Your Order</h2>
+    <ul id="cartItems" class="cart-items"></ul>
+    <div class="cart-total">
+      <span>Total:</span>
+      <span id="cartTotal">$0.00</span>
+    </div>
+    <button id="checkoutBtn" class="btn primary">Checkout</button>
+    <button id="closeCart" class="btn secondary">Close</button>
+  </aside>
+
+  <footer class="footer">
+    <div class="container">© 2025 My Restaurant</div>
+  </footer>
+
+  <script src="app.js"></script>
+  <script src="./restaurant-ordering.js"></script>
+</body>
+</html>
